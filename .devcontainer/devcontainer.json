@@ -1,0 +1,20 @@
+{
+  "name": "Whatsapp-Agno-DEV",
+  "dockerComposeFile": "../compose.yml",
+  "service": "api",
+  "remoteUser": "ruan",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/workspace/.venv/bin/python"
+      },
+      "extensions": [
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy"
+      ]
+    }
+  }
+}
