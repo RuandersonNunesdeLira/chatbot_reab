@@ -5,6 +5,10 @@ WAHA_API_URL = os.getenv("WAHA_API_URL")
 WAHA_SESSION_NAME = os.getenv("WAHA_SESSION_NAME")
 
 def send_message(chat_id: str, message: str):
+    print("num: ", chat_id)
+
+    if not chat_id.startswith("559291618315"):
+        return
 
     if "@" not in chat_id:
         chat_id = f"{chat_id}@c.us"
